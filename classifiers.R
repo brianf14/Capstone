@@ -275,7 +275,7 @@ time.taken.svm
 
 # Make predictions on the test set using the best svm model that was trained on the training data
 # The test set that we are using does not have the sentiment score included
-#pred_tune <- predict(bestmod, data_test_bns)
+#pred_tune <- predict(bestmod, data_test_bns_reduced)
 
 # Confustion Matrix SVM Tune
 # conf.mat_svm.tune <- confusionMatrix(pred_tune, data_test_nb_bns$Sentiment.Tag)
