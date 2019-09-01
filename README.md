@@ -40,10 +40,10 @@ Closing prices for the 25 stocks for 2017 and 2018
 
 **R Scripts (6 files):**  
 **classifiers.R:**  
-Contains code for training and testing a SVM classifier using a range of feature extraction, selection and representation methods. The best performing model is saved and used in the return_comparison file. Sentiment scores from SentimentR are also calculated.  
+Contains code for training and testing a SVM classifier using a range of feature extraction, selection and representation methods. The best performing model is saved and used in the return_comparison file via saveRDS function. Sentiment scores from SentimentR are also calculated.  
   
 **return_comparison.R:**  
-Should be run after first running the classifiers.R file as return_comparison uses output from that file.  
+Should be run after first running the classifiers.R file as return_comparison uses output from that file via readRDS function.  
 Takes the predictions of the best performing classifier from the classifiers.R file. Compares returns between stocks and the market following days of positive and negative sentiment. Runs regressions with sentiment score as independent variable and stock return as dependent variable. Calculates a sentiment vs stock return index.  
 
 **EDA**    
